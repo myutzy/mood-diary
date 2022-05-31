@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="wwidth=device-width, initial-scale=1.0" />
+        <title>Mood Diary</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="container-content">
+                <h1>Welcome to<br>Mood Diary!</h1>
+                <label for="mood">What is your current mood?</label><br />
+                <input type="text" id="mood" />
+                <button onclick="setMood()" class="btn-success">Set Mood</button>
+                <button onclick="getMood()" class="btn-primary">Get Mood</button>
+                <label id="current-mood"></label>
+            </div>
+        </div>
+        <script
+            src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+            type="application/javascript">
+        </script>
+        <script src="index.js"></script>
+    </body>
+</html>
